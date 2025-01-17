@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Open Sans", serif;
+    overflow-x: hidden    ;
+}
+ .container{
+    width: 1280px;
+    margin: 0 auto;
+}
+/* ---------NAVBAR START----------- */
+
+#nav_part .navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+}
+#nav_part .navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+}
+#nav_part .navbar ul li a{
+    text-decoration: none ;
+    color: #1E2637;
+}
+#nav_part .navbar ul li a:hover{
+    font-weight: 700;
+}
+#nav_part .navbar ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background:#5045E5;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    justify-content: center;
+    transition: .4s;
+}
+#nav_part .navbar ul li a:hover::after{
+    width: 100%;
+    font-weight: 700;
+}
+#nav_part .navbar ul li{
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+
+}
+#nav_part .navbar button{
+    background: #5045E5;
+    color: #ffffff;
+    border-radius: 12px;
+    width: 141px;
+    height: 56px;
+    border: none;
+}
+#nav_part .navbar button:hover{
+    background: #ffffff;
+    color: #1E2637;
+    border: 1px solid #1E2637;
+}
+
+/* ---------NAVBAR END----------- */
+/* ---------BANNER PART START----------- */
+
+#banner_part{
+    background: url(/images/Grid.png);
+}
+#banner_part h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #1E2637;
+    margin-top: 68px;
+    width: 680px;
+    text-align: center;
+    padding: 0px 726px;
+}
+#banner_part p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    width: 665px;
+    color: #383E30;
+    padding: 0px 726px;
+    text-align: center;
+}
+.round-button {
+	box-sizing: border-box;
+	display:block;
+	width:80px;
+	height:80px;
+	padding-top: 14px;
+	padding-left: 8px;
+	line-height: 20px;
+	border: 6px solid #fff;
+	border-radius: 50%;
+	color:#fff;
+	text-align:center;
+	text-decoration:none;
+    background:#5045E5;
+	font-size:20px;
+	font-weight:bold;
+	transition: all 0.3s ease;
+}
+.round-button:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 10px rgb(9, 19, 61);
+}
+#banner_part .vedio_part{
+    position: relative;
+}
+#banner_part .play {
+    position: absolute;
+    top: 285px;
+    right: 1000px;
+}
+#banner_part .button {
+    margin-top: 36px;
+    margin-left: 860px;
+    display: flex;
+    gap: 20px;
+}
+#banner_part button{
+    background: #5045E5;
+    color: #ffffff;
+    border-radius: 12px;
+    width: 198px;
+    height: 56px;
+    border: none;
+}
+#banner_part button:hover{
+    background: #ffffff;
+    color: #1E2637;
+    border: 1px solid #1E2637;
+}
+#banner_part img {
+    padding: 0px 540px;
+    margin-top: 45px;
+}
+/* ---------BANNER PART END----------- */
+/* ---------PAYMENT PART START----------- */
+#payment_part p {
+    color: #1E2637;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 598px;
+}
+#payment_part .methods {
+    display: flex;
+    gap: 87px;
+    margin-top: 36px;
+    margin-bottom: 80px;
+}
+/* ---------PAYMENT PART END---------- */
+/* ---------TOOLS PART START---------- */
+#tools_part h2{
+    width: 602px;
+    font-size: 48px;
+    font-weight: 600;
+    color: #1E2637;
+    text-align: center;
+    padding: 0px 400px;
+}
+#tools_part .text p{
+    width: 326px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #1E2637;
+    text-align: center;
+    padding: 0px 532px;
+    margin-top: 20px;
+}
+#tools_part #row {
+    display: flex;
+    gap: 36px;
+}
+#row .col-lg-4{
+    width: 420px;
+    background: #FBFBFD;
+    border-radius: 24px;
+    margin-top: 56px;
+
+}
+#tools_part #row h4{
+    padding-top: 142px;
+    padding-left: 32px;
+    font-size: 24px;
+    letter-spacing: 1%;
+    font-weight: 600;
+}
+#tools_part #row .col-lg-4 p{
+    font-size: 16px;
+    font-weight: 300;
+    width: 346px;
+    margin-top: 20px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+}
+#tools_part #row .col-lg-4 .icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+    align-items: center;
+    padding-top: 5px;
+}
+#tools_part #row .col-lg-4 span{
+    background: #E5E8EE;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: #5045E5;
+}
+#tools_part #row .col-lg-4 span i {
+    padding-top: 16px;
+}
+#second #row{
+    display: flex;
+    gap: 36px;
+    margin-bottom: 80px;
+}
+/* ---------TOOLS PART END---------- */
+/* ---------CRM PART START---------- */
+#crm_part {
+    background: #F1F3F7;
+}
+#crm_part h2 {
+    width: 602px;
+    font-size: 48px;
+    font-weight: 600;
+    color: #1E2637;
+    text-align: center;
+    padding: 0px 400px;
+    padding-top: 40PX;
+}
+#crm_part p{
+    width: 326px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #1E2637;
+    text-align: center;
+    padding: 0px 532px;
+    margin-top: 20px;
+}
+#crm_part #row{
+    display: flex;
+    gap: 36px;
+}
+#crm_part #row .col-lg-4{
+    width: 420px;
+    background: #FBFBFD;
+    border-radius: 24px;
+    margin-top: 56px;
+}
+#crm_part #row h4{
+    padding-top: 142px;
+    padding-left: 32px;
+    font-size: 24px;
+    letter-spacing: 1%;
+    font-weight: 600;
+}
+#crm_part #row  p{
+    font-size: 16px;
+    font-weight: 300;
+    width: 346px;
+    text-align: start;
+    margin-top: 20px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+}
+#crm_part #row .icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+    align-items: center;
+    padding-top: 5px;
+   
+}
+#crm_part #row .col-lg-4 span{
+    background: #E5E8EE;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: #5045E5;
+}
+#crm_part #row .col-lg-4 span i {
+    padding-top: 16px;
+}
+.second_part #row{
+    display: flex;
+    gap: 36px;
+}
+#crm_part .second_part{
+    padding-bottom: 80px;
+}
+/* ---------CRM PART END---------- */
+/* ---------HELP PART START---------- */
+#help_part h2{
+    width: 602px;
+    font-size: 48px;
+    font-weight: 600;
+    color: #1E2637;
+    text-align: center;
+    padding: 0px 400px;
+    padding-top: 40PX;
+}
+#help_part .row{
+    margin-top: 80px;
+    margin-bottom: 120px;
+    display: flex;
+    gap: 106px;
+}
+#help_part .row .col-lg-6 button {
+    display: flex;
+    width: 582px;
+    height: 88px;
+    border-radius: 12px;
+    justify-content: space-between;
+}
+#help_part .row .col-lg-6 button h4 {
+    margin-left: -335px;
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 1%;
+    text-transform: capitalize;
+    font-family: "Open Sans", serif;
+}
+#help_part .row .col-lg-6 button span{
+        background: #b6bbc5;
+        width: 48px;
+        height: 48px;
+        margin-left: 30px;
+        margin-top: 20px;
+        border-radius: 50%;
+        color: #5045E5;
+}
+#help_part .row button .drop_down {
+    margin-right: 20px;
+    margin-top: 35px;
+    font-size: 20px;
+    color: #5045E5;
+}
+#help_part .row button .coin_icon{
+    margin-top: 20px;
+}
+#help_part .row  .col-lg-6 .btn_part{
+    margin-top: 20px;
+}
+#help_part .row  .col-lg-6 .btn_part h4 {
+    margin-left: -240px;
+    margin-top: 32px;
+}
+#help_part .row  .col-lg-6 .btn_part .faq {
+   margin-left: -370px;
+}
+#help_part .row .col-lg-6 button:hover{
+    border: 2px solid #5045E5;
+
+}
+/* ---------HELP PART END---------- */
+/* ---------STRIVE PART START---------- */
+#strive_part{
+    background: url(/images/Pattern.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+#strive_part h2{
+    width: 602px;
+    font-size: 48px;
+    font-weight: 600;
+    color: #1E2637;
+    text-align: center;
+    padding: 0px 400px;
+}
+#strive_part p {
+    width: 305px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #1E2637;
+    text-align: center;
+    padding: 0px 532px;
+    margin-top: 20px;
+}
+#strive_part button {
+    margin-top: 36px;
+    margin-left: 615px;
+    background: #5045E5;
+    color: #ffffff;
+    border-radius: 12px;
+    width: 141px;
+    height: 56px;
+    border: none;
+    margin-bottom: 80px;
+}
+#strive_part button:hover{
+    background: #ffffff;
+    color: #1E2637;
+    border: 1px solid #1E2637;
+}
+/* ---------STRIVE PART END---------- */
+/* ---------FOOTER TOP START---------- */
+#footer_part{
+    background: #252E40;
+}
+#footer_top {
+    border-bottom: 1px solid #666666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 77px;
+}
+/* #footer_part span::after {
+    content: "";
+    width: 1270px;
+    height: 2px;
+    background: #666666;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 110px;
+} */
+#footer_top .contact img{
+    margin-top: 40px;
+}
+#footer_top .contact h3{
+    color: #E5E8EE;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1%;
+    margin-top: 40px;
+}
+#footer_top .contact ul li{
+    list-style: none;
+    margin-top: 16px;
+}
+#footer_top .contact ul li a{
+    font-size: 16px;
+    font-weight: 300;
+    color: #E5E8EE;
+    letter-spacing: 1%;
+    text-decoration: none;
+}
+#footer_top .recent h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1%;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    font-family: "Open Sans", serif;
+}
+#footer_top .recent ul li{
+    list-style: none;
+    margin-top: 32px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #E5E8EE;
+    letter-spacing: 1%;
+
+}
+#footer_top .recent2 h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1%;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    font-family: "Open Sans", serif;
+}
+#footer_top .recent2 ul li{
+    list-style: none;
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #E5E8EE;
+    letter-spacing: 1%;
+
+}
+#footer_end {
+    position: relative;
+    padding: 78px 0px;
+}
+#footer_end p {
+    width: 305px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    padding: 0px 487px;
+    margin: 0 auto;
+}
+/* ---------FOOTER TOP END---------- */
