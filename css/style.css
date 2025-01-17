@@ -86,13 +86,13 @@ body{
     padding-top: 68px;
 }
 #banner_part p {
-    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
     font-size: 16px;
     font-weight: 300;
     width: 665px;
     color: #383E30;
-    padding: 0px 726px;
-    text-align: center;
 }
 .round-button {
 	box-sizing: border-box;
@@ -122,11 +122,12 @@ body{
 #banner_part .play {
     position: absolute;
     top: 285px;
-    right: 1000px;
+    right: 900px;
 }
 #banner_part .button {
     margin-top: 36px;
-    margin-left: 860px;
+    justify-content: center;
+    align-items: center;
     display: flex;
     gap: 20px;
 }
@@ -144,7 +145,7 @@ body{
     border: 1px solid #1E2637;
 }
 #banner_part img {
-    padding: 0px 540px;
+    padding: 0px 440px;
     margin-top: 45px;
 }
 /* ---------BANNER PART END----------- */
