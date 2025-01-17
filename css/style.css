@@ -74,16 +74,16 @@ body{
 /* ---------BANNER PART START----------- */
 
 #banner_part{
-    background: url(/images/Grid.png);
+    background: url(../images/Grid.png);
 }
 #banner_part h1 {
     font-size: 48px;
     font-weight: 600;
     color: #1E2637;
-    margin-top: 68px;
+    margin: 0 auto;
     width: 680px;
     text-align: center;
-    padding: 0px 726px;
+    padding-top: 68px;
 }
 #banner_part p {
     margin-top: 20px;
